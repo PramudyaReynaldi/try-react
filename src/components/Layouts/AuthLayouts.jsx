@@ -20,13 +20,15 @@ export default function AuthLayouts(props) {
 
             {type === "login" && (
               <Link to="/register" className="font-bold text-blue-600">
-                {" "}Register
+                {" "}
+                Register
               </Link>
             )}
 
             {type === "register" && (
               <Link to="/" className="font-bold text-blue-600">
-                {" "}Login
+                {" "}
+                Login
               </Link>
             )}
           </p>
