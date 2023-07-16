@@ -8,7 +8,7 @@ const products = [
   {
     id: 1,
     name: "Sneakers",
-    price: "1000.000",
+    price: 1000000,
     image: imgSneakers,
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
     maxime eligendi unde minus? Doloribus debitis tempore dicta
@@ -17,7 +17,7 @@ const products = [
   {
     id: 2,
     name: "Jordan",
-    price: "800.000",
+    price: 800000,
     image: imgJordan,
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit.`,
   },
@@ -34,7 +34,7 @@ export default function ProductsPage() {
 
   return (
     <>
-      <div className="justify-end flex h-10 bg-blue-600 text-white items-center px-10">
+      <div className="justify-end flex h-10 bg-blue-600 text-white items-center px-10 py-8">
         <h1>{email}</h1>
         <Button style="bg-black ml-5" onClick={handleLogout}>
           Logout
@@ -47,7 +47,7 @@ export default function ProductsPage() {
             <CardProduct.CardBody name={product.name}>
               {product.description}
             </CardProduct.CardBody>
-            <CardProduct.CardFooter price={`Rp. ${product.price}`} />
+            <CardProduct.CardFooter price={product.price} />
           </CardProduct>
         ))}
       </div>
